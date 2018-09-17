@@ -43,18 +43,22 @@ li {
     width: 320px;
   }
 }
+@media (max-width: 660px) {
+  .container {
+    width: 660px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 320px;
+  }
+}
 .header-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   min-height: 600px;
   background: url(../../img/main-image.jpg) no-repeat center;
   background-size: cover;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  z-index: -1;
+  padding-bottom: 242px;
 }
 .header-menu {
   display: flex;
@@ -62,7 +66,9 @@ li {
   height: 10vh;
   align-items: center;
   border: 2px solid red;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 250px;
 }
 .menu-nav {
   display: flex;
@@ -118,15 +124,18 @@ li {
 }
 .header-main__text {
   font-size: 36px;
+  line-height: 36px;
   font-style: italic;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   opacity: 0.5;
+  margin-bottom: 17px;
 }
 .header-main__caption {
   font-size: 100px;
   font-family: 'Lato_bold' sans-serif;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 .header-main__btn {
   color: #ffffff;
@@ -141,9 +150,73 @@ li {
   font-weight: bold;
   cursor: pointer;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 .header-main__minitext {
   font-size: 14px;
   text-transform: uppercase;
   font-family: 'Lato reg', sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 660px) {
+  .container {
+    width: 660px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 320px;
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    width: 660px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 320px;
+  }
+}
+.main-advantages {
+  background-color: #ffffff;
+}
+.main-advantages-box {
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid red;
+}
+.cards-pictures {
+  width: 107px;
+  height: 107px;
+  margin: 0 auto;
+}
+.cards-caption {
+  color: #000000;
+  font-family: 'Lato bold', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+h2:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 88px;
+  padding-top: 10px;
+  border-bottom: 1px solid #f57365;
+}
+.cards-text {
+  color: #aaaaaa;
+  font-family: 'Lato reg', sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
