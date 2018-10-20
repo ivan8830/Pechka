@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
+    width: 360px;
 }
 
 .cards-pictures {
@@ -49,4 +49,30 @@ h2:after {
     .reg();
     font-size: 16px;
     text-align: center;
+}
+
+
+@media @tablet-widths{
+    .main-advantages-box {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .cards{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media @mobile-widths{
+    .main-advantages-box {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .cards{
+        width: 300px;
+    }
 }

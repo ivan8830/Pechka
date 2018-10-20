@@ -16,8 +16,9 @@
 
 .header-main__caption {
     font-size: 100px;
-    font-family: 'Lato_bold' sans-serif;
+    .bold();
     font-weight: bold;
+    margin: 0;
     margin-bottom: 40px;
 }
 
@@ -45,4 +46,30 @@
 
 .header{
     margin-bottom: 100px;
+}
+
+@media @tablet-widths{
+    .header-main__text {
+        font-size: 26px;
+        
+    }
+    
+    .header-main__caption {
+        font-size: 80px;
+    }
+}
+
+@media @mobile-widths{
+    .header-main__text {
+        font-size: 20px;
+        
+    }
+    
+    .header-main__caption {
+        font-size: 70px;
+    }
+
+    .header-main__minitext {
+        font-size: 8px;
+    }
 }
